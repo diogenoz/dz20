@@ -23,7 +23,7 @@ public class LoginForm extends Composite {
     interface LoginFormBinder extends UiBinder<Widget, LoginForm> {
     }
 
-    private TasksTableWidget itemsTableWidget;
+    private TasksTableWidget tasksTableWidget;
     private TabLayoutPanel tabPanel;
     private AddTaskFormWidget addTaskFormWidget;
 
@@ -31,7 +31,7 @@ public class LoginForm extends Composite {
 
     public LoginForm(TabLayoutPanel tabPanel, TasksTableWidget itemsTableWidget, AddTaskFormWidget addTaskFormWidget) {
         this.initWidget(uiBinder.createAndBindUi(this));
-        this.itemsTableWidget = itemsTableWidget;
+        this.tasksTableWidget = itemsTableWidget;
         this.tabPanel = tabPanel;
         this.addTaskFormWidget = addTaskFormWidget;
     }
@@ -53,7 +53,7 @@ public class LoginForm extends Composite {
                 textUsername.setText(null);
                 textPassword.setText(null);
                 Utils.saveToken(jwtAuthResponseDto.getToken());
-                itemsTableWidget.refresh();
+                tasksTableWidget.refresh();
                 addTaskFormWidget.refresh();
                 tabPanel.selectTab(1);
             }

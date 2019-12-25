@@ -44,9 +44,9 @@ public class AddTaskFormWidget extends Composite {
 
     private static AddTaskFormWidget.AddItemFormBinder uiBinder = GWT.create(AddTaskFormWidget.AddItemFormBinder.class);
 
-    public AddTaskFormWidget(TasksTableWidget itemsTableWidget) {
+    public AddTaskFormWidget(TasksTableWidget tasksTableWidget) {
         this.initWidget(uiBinder.createAndBindUi(this));
-        this.tasksTableWidget = itemsTableWidget;
+        this.tasksTableWidget = tasksTableWidget;
     }
 
     public void refresh() {
