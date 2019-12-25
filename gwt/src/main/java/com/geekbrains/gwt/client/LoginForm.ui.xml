@@ -1,0 +1,17 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <g:DecoratorPanel>
+        <g:VerticalPanel spacing="10">
+            <g:HorizontalPanel>
+                <g:Label text="Username:" width="100px"/>
+                <g:TextBox ui:field="textUsername" width="200px"/>
+            </g:HorizontalPanel>
+            <g:HorizontalPanel>
+                <g:Label text="Password:" width="100px"/>
+                <g:PasswordTextBox ui:field="textPassword" width="200px"/>
+            </g:HorizontalPanel>
+            <g:Button ui:field="btnSubmit">Войти</g:Button>
+        </g:VerticalPanel>
+    </g:DecoratorPanel>
+</ui:UiBinder>

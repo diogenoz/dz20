@@ -1,0 +1,9 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:c='urn:import:com.google.gwt.user.cellview.client'>
+    <g:VerticalPanel>
+        <g:Button ui:field="btnRefresh">Refresh</g:Button>
+        <c:CellTable ui:field="table" width="100%" pageSize="15">
+        </c:CellTable>
+    </g:VerticalPanel>
+</ui:UiBinder>
